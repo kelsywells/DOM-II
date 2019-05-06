@@ -33,7 +33,7 @@
   <div class="container home">
     <header class="intro">
       <img src="img/fun-bus.jpg" alt="bus in the sand" draggable="true">
-      <h2>Welcome To Fun Bus!</h2>
+      <h2 id="noContextMenu">Welcome To Fun Bus! I'm sorry, but you cannot copy this line.</h2>
       <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
     </header>
     <section class="content-section">
@@ -80,10 +80,21 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <form id="form">
+        <label>Is this a fun page? (You have to answer with your mouse, sorry)<input type="text"></label>
+        <br><br>
+        <button type="submit">Submit answer</button>
+        <button type="reset">Reset form</button>
+      </form>
+      <p id="log"></p>
+
   </div><!-- container -->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
+
+    <div class="source" contenteditable="true">Will you copy our name? Copy this text first!</div>
+    <div class="target" contenteditable="true">Paste here to unfold your destiny...</div>
   </footer>
 
 </body>
