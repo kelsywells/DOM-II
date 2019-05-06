@@ -3,9 +3,9 @@
 //mouseover:
 
 const logoHeading = document.querySelector('.logo-heading');
-logoHeading.addEventListener('mouseover', function(){
+logoHeading.addEventListener('mouseover', function(e){
     logoHeading.style.color = 'red';
-    stopPropagation();
+    e.stopPropagation();
 });
 
 logoHeading.addEventListener('mouseover', function(){
